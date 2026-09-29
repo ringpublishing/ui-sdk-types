@@ -1,0 +1,13 @@
+export enum OpenMode {
+    FULL_SCREEN = 'FULL_SCREEN',
+    LARGE_SCREEN = 'LARGE_SCREEN',
+    MEDIUM_SCREEN = 'MEDIUM_SCREEN',
+    SMALL_SCREEN = 'SMALL_SCREEN'
+}
+
+export interface OpenModes {
+    FULL_SCREEN: OpenMode.FULL_SCREEN;
+    LARGE_SCREEN: OpenMode.LARGE_SCREEN;
+    MEDIUM_SCREEN: OpenMode.MEDIUM_SCREEN;
+    SMALL_SCREEN: OpenMode.SMALL_SCREEN;
+}

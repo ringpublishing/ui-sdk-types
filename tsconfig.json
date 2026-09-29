@@ -1,0 +1,20 @@
+{
+    "extends": "@ringieraxelspringer/tsconfig",
+    "compilerOptions": {
+        "emitDeclarationOnly": true,
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "outDir": "dist",
+        "removeComments": false,
+        "rootDir": "src",
+        "skipLibCheck": true
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "src/schemas"
+    ]
+}
