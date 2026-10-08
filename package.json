@@ -25,6 +25,7 @@
         "prepare": "npm run build"
     },
     "dependencies": {
+        "@ag-ui/client": "0.0.59",
         "@mcp-b/webmcp-types": "~0.3.2"
     },
     "devDependencies": {

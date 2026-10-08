@@ -1,3 +1,4 @@
+import type { RingSdkApiAgents } from './agents.js';
 import type { RingSdkApiApps } from './apps.js';
 import type { RingSdkApiAuth } from './auth.js';
 import type { RingSdkApiConfig } from './config.js';
@@ -8,6 +9,7 @@ import type { RingSdkApiTopBar } from './top-bar.js';
 import type { RingSdkApiUser } from './user.js';
 import type { RingSdkApiWebMCP } from './web-mcp.js';
 
+export type * from './agents.js';
 export type * from './apps.js';
 export type * from './auth.js';
 export type * from './config.js';
@@ -20,6 +22,7 @@ export type * from './web-mcp.js';
 export type * from '../../dist/api/top-bar-types.d.ts';
 
 export interface RingSdkApi {
+    agents: RingSdkApiAgents;
     apps: RingSdkApiApps;
     auth: RingSdkApiAuth;
     config: RingSdkApiConfig;

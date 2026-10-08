@@ -1,5 +1,11 @@
-import { z } from 'zod';
+import * as z from 'zod';
+import { en } from 'zod/locales';
 import { TopBarState } from '../constants/top-bar-states.js';
+
+// A namespace import keeps zod's locales out of the bundle every module loads; its English messages are set here,
+// as `import { z }` did.
+z.config(en());
+
 // ─── Shared ───────────────────────────────────────────────────────────────────
 
 const ColorSchema = z.enum([
